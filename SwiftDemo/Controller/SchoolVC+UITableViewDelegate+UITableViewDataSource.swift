@@ -10,12 +10,11 @@ import UIKit
 extension SchoolVC: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        // One section for each class
-        return school.classes.count
+        school.classes.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return school.classes[section].students.count
+        school.classes[section].students.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
