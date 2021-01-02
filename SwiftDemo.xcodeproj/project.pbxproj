@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		4A15814925A0AC9A0074C41A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15814825A0AC9A0074C41A /* AppDelegate.swift */; };
 		4A15814B25A0AC9A0074C41A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15814A25A0AC9A0074C41A /* SceneDelegate.swift */; };
-		4A15814D25A0AC9A0074C41A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15814C25A0AC9A0074C41A /* ViewController.swift */; };
+		4A15814D25A0AC9A0074C41A /* SchoolVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15814C25A0AC9A0074C41A /* SchoolVC.swift */; };
 		4A15815025A0AC9A0074C41A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A15814E25A0AC9A0074C41A /* Main.storyboard */; };
 		4A15815225A0AC9B0074C41A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A15815125A0AC9B0074C41A /* Assets.xcassets */; };
 		4A15815525A0AC9B0074C41A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A15815325A0AC9B0074C41A /* LaunchScreen.storyboard */; };
+		4A15815F25A0AF330074C41A /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15815E25A0AF330074C41A /* School.swift */; };
+		4A15816725A0AFBF0074C41A /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15816625A0AFBF0074C41A /* Class.swift */; };
+		4A15816A25A0AFD50074C41A /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15816925A0AFD50074C41A /* Student.swift */; };
+		4A15816E25A0B3B80074C41A /* SchoolVC+UITableViewDelegate+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15816D25A0B3B80074C41A /* SchoolVC+UITableViewDelegate+UITableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A15814525A0AC9A0074C41A /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A15814825A0AC9A0074C41A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A15814A25A0AC9A0074C41A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4A15814C25A0AC9A0074C41A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A15814C25A0AC9A0074C41A /* SchoolVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolVC.swift; sourceTree = "<group>"; };
 		4A15814F25A0AC9A0074C41A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A15815125A0AC9B0074C41A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A15815425A0AC9B0074C41A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A15815625A0AC9B0074C41A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A15815E25A0AF330074C41A /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		4A15816625A0AFBF0074C41A /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		4A15816925A0AFD50074C41A /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		4A15816D25A0B3B80074C41A /* SchoolVC+UITableViewDelegate+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SchoolVC+UITableViewDelegate+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		4A15814725A0AC9A0074C41A /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4A15816125A0AF400074C41A /* Controller */,
+				4A15816325A0AF490074C41A /* Model */,
+				4A15817425A0BA7F0074C41A /* Storyboard */,
+				4A15815125A0AC9B0074C41A /* Assets.xcassets */,
+				4A15815625A0AC9B0074C41A /* Info.plist */,
 				4A15814825A0AC9A0074C41A /* AppDelegate.swift */,
 				4A15814A25A0AC9A0074C41A /* SceneDelegate.swift */,
-				4A15814C25A0AC9A0074C41A /* ViewController.swift */,
-				4A15814E25A0AC9A0074C41A /* Main.storyboard */,
-				4A15815125A0AC9B0074C41A /* Assets.xcassets */,
-				4A15815325A0AC9B0074C41A /* LaunchScreen.storyboard */,
-				4A15815625A0AC9B0074C41A /* Info.plist */,
 			);
 			path = SwiftDemo;
+			sourceTree = "<group>";
+		};
+		4A15816125A0AF400074C41A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A15814C25A0AC9A0074C41A /* SchoolVC.swift */,
+				4A15816D25A0B3B80074C41A /* SchoolVC+UITableViewDelegate+UITableViewDataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A15816325A0AF490074C41A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A15815E25A0AF330074C41A /* School.swift */,
+				4A15816625A0AFBF0074C41A /* Class.swift */,
+				4A15816925A0AFD50074C41A /* Student.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A15817425A0BA7F0074C41A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4A15815325A0AC9B0074C41A /* LaunchScreen.storyboard */,
+				4A15814E25A0AC9A0074C41A /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A15814D25A0AC9A0074C41A /* ViewController.swift in Sources */,
+				4A15815F25A0AF330074C41A /* School.swift in Sources */,
+				4A15816E25A0B3B80074C41A /* SchoolVC+UITableViewDelegate+UITableViewDataSource.swift in Sources */,
+				4A15816A25A0AFD50074C41A /* Student.swift in Sources */,
+				4A15814D25A0AC9A0074C41A /* SchoolVC.swift in Sources */,
 				4A15814925A0AC9A0074C41A /* AppDelegate.swift in Sources */,
+				4A15816725A0AFBF0074C41A /* Class.swift in Sources */,
 				4A15814B25A0AC9A0074C41A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
