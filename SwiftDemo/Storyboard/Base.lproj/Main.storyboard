@@ -30,8 +30,15 @@
                             <constraint firstItem="60j-Nt-NOX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oUp-Je-9cQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Students" id="OJK-ou-5TD"/>
+                    <navigationItem key="navigationItem" title="Students" id="OJK-ou-5TD">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="line.horizontal.2.decrease.circle" catalog="system" id="nED-Cg-A8d">
+                            <connections>
+                                <action selector="sortButton:" destination="BYZ-38-t0r" id="8da-f9-Tgh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="sortButton" destination="nED-Cg-A8d" id="sBb-jd-JYV"/>
                         <outlet property="tableView" destination="60j-Nt-NOX" id="w7N-X4-yvW"/>
                     </connections>
                 </viewController>
@@ -59,6 +66,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="line.horizontal.2.decrease.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

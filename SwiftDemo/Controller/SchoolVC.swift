@@ -10,6 +10,9 @@ import UIKit
 class SchoolVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var sortButton: UIBarButtonItem!
+    
+    var inSortMode = false
     
     // Our model
     var school: School!
@@ -26,19 +29,35 @@ class SchoolVC: UIViewController {
         school = School(name: "HTL", classes: classes)
     }
     
+    @IBAction func sortButton(_ sender: Any) {
+        
+        inSortMode = !inSortMode
+        
+        print("Filter mode: \(inSortMode)")
+        
+        // Set filter button image
+        self.sortButton.image = self.inSortMode ? UIImage(systemName: "line.horizontal.3.decrease.circle.fill") : UIImage(systemName: "line.horizontal.3.decrease.circle")
+        
+        tableView.reloadData()
+    }
+    
     fileprivate func generateClasses() -> [Class] {
         return [
             Class(name: "Class 1", students: [
                 Student(firstname: "Emma", lastname: "Smith"),
                 Student(firstname: "Liam", lastname: "Johnson"),
                 Student(firstname: "Olivia", lastname: "Williams"),
-                Student(firstname: "Noah", lastname: "Jones")
+                Student(firstname: "Noah", lastname: "Jones"),
+                Student(firstname: "Anna", lastname: "Weiss"),
+                Student(firstname: "Andreas", lastname: "Holzer")
             ]),
             Class(name: "Class 2", students: [
                 Student(firstname: "Logan", lastname: "Brown"),
                 Student(firstname: "Ava", lastname: "Davis"),
                 Student(firstname: "Ethan", lastname: "Miller"),
-                Student(firstname: "Isabella", lastname: "Wilson")
+                Student(firstname: "Isabella", lastname: "Wilson"),
+                Student(firstname: "Ben", lastname: "Schmid"),
+                Student(firstname: "Ava", lastname: "Fischer"),
             ])
         ]
     }
