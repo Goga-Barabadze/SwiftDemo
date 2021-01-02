@@ -26,7 +26,10 @@ class SchoolVC: UIViewController {
         
         // Let's initialize the school-model
         let classes = generateClasses()
-        school = School(name: "HTL", classes: classes)
+        school = School(name: "HTL Perg", classes: classes)
+        
+        // Set the title of the current view
+        navigationItem.title = school.name
     }
     
     @IBAction func sortButton(_ sender: Any) {
