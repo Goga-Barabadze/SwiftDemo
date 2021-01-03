@@ -45,8 +45,11 @@ class SchoolVC: UIViewController {
     }
     
     fileprivate func generateClasses() -> [Class] {
+        // An array ...
         [
+            // ... of classes, each of which consisting of a name ...
             Class(name: "Class 1",
+                  // ... and an array of students.
                   students: [
                     Student(firstname: "Emma", lastname: "Smith"),
                     Student(firstname: "Liam", lastname: "Johnson"),
