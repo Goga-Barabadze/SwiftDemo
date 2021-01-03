@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SchoolVC.swift
 //  SwiftDemo
 //
 //  Created by Goga Barabadze on 02.01.21.
