@@ -19,10 +19,10 @@ extension SchoolVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell()
         let schoolClass = school.classes[indexPath.section]
         let student = inSortMode ? schoolClass.sortedStudents[indexPath.row] : schoolClass.students[indexPath.row]
         
+        let cell = UITableViewCell()
         cell.textLabel?.text = "\(student.firstname) \(student.lastname)"
         
         return cell
