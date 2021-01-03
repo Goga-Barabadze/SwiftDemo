@@ -24,6 +24,7 @@ extension SchoolVC: UITableViewDelegate, UITableViewDataSource {
         
         let cell = UITableViewCell()
         cell.textLabel?.text = "\(student.firstname) \(student.lastname)"
+        // Alternative: cell.textLabel?.text = student.firstname + " " + student.lastname
         
         return cell
         
