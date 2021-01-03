@@ -12,10 +12,10 @@ class SchoolVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sortButton: UIBarButtonItem!
     
-    var inSortMode = false
-    
     // Our model
     var school: School!
+    
+    var inSortMode = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
