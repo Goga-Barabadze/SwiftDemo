@@ -45,23 +45,27 @@ class SchoolVC: UIViewController {
     }
     
     fileprivate func generateClasses() -> [Class] {
-        return [
-            Class(name: "Class 1", students: [
-                Student(firstname: "Emma", lastname: "Smith"),
-                Student(firstname: "Liam", lastname: "Johnson"),
-                Student(firstname: "Olivia", lastname: "Williams"),
-                Student(firstname: "Noah", lastname: "Jones"),
-                Student(firstname: "Anna", lastname: "Weiss"),
-                Student(firstname: "Andreas", lastname: "Holzer")
-            ]),
-            Class(name: "Class 2", students: [
-                Student(firstname: "Logan", lastname: "Brown"),
-                Student(firstname: "Ava", lastname: "Davis"),
-                Student(firstname: "Ethan", lastname: "Miller"),
-                Student(firstname: "Isabella", lastname: "Wilson"),
-                Student(firstname: "Ben", lastname: "Schmid"),
-                Student(firstname: "Ava", lastname: "Fischer"),
-            ])
+        [
+            Class(name: "Class 1",
+                  students: [
+                    Student(firstname: "Emma", lastname: "Smith"),
+                    Student(firstname: "Liam", lastname: "Johnson"),
+                    Student(firstname: "Olivia", lastname: "Williams"),
+                    Student(firstname: "Noah", lastname: "Jones"),
+                    Student(firstname: "Anna", lastname: "Weiss"),
+                    Student(firstname: "Andreas", lastname: "Holzer")
+                  ]
+            ),
+            Class(name: "Class 2",
+                  students: [
+                    Student(firstname: "Logan", lastname: "Brown"),
+                    Student(firstname: "Ava", lastname: "Davis"),
+                    Student(firstname: "Ethan", lastname: "Miller"),
+                    Student(firstname: "Isabella", lastname: "Wilson"),
+                    Student(firstname: "Ben", lastname: "Schmid"),
+                    Student(firstname: "Ava", lastname: "Fischer"),
+                  ]
+            )
         ]
     }
 }
