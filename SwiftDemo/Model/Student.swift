@@ -12,10 +12,6 @@ class Student {
     var firstname = ""
     var lastname = ""
     
-    init() {
-        
-    }
-    
     init(firstname: String, lastname: String) {
         self.firstname = firstname
         self.lastname = lastname

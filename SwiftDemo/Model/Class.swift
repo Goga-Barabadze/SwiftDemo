@@ -20,10 +20,6 @@ class Class {
         }
     }
     
-    init() {
-        
-    }
-    
     init(name: String, students: [Student]) {
         self.name = name
         self.students = students

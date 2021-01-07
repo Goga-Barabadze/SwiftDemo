@@ -16,8 +16,4 @@ class School {
         self.name = name
         self.classes = classes
     }
-    
-    init() {
-        
-    }
 }

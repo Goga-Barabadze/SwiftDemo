@@ -64,8 +64,8 @@
 		4A15814725A0AC9A0074C41A /* SwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				4A15816125A0AF400074C41A /* Controller */,
 				4A15816325A0AF490074C41A /* Model */,
+				4A15816125A0AF400074C41A /* Controller */,
 				4A15817425A0BA7F0074C41A /* Storyboard */,
 				4A15815125A0AC9B0074C41A /* Assets.xcassets */,
 				4A15815625A0AC9B0074C41A /* Info.plist */,
